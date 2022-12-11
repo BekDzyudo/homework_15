@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 600px;
+    height: 100px;
+    margin: 20px auto;
+}
+.aksi-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.row input[type="checkbox"]{
+    display: none;
+    cursor: pointer;
+}
+.row label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 75px;
+    height: 25px;
+    font-family: 'Proxima Nova';
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.07em;
+    background: #ccc;
+}
+.row input[type="checkbox"]:checked + label{
+    background: linear-gradient(91.1deg, #9710E9 1.17%, #FD8D43 99.31%);
+    color: white;
+}
+
+/* ====================================================== */
+.strani-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.strani-container .row-strani{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.row-strani input[type="checkbox"]{
+    display: none;
+    cursor: pointer;
+}
+.row-strani label{
+    cursor: pointer;
+    display: flex;
+    font-family: 'Barlow' sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+.row-strani label::before{
+    content: "";
+    width: 13px;
+    height: 13px;
+    border: 1px solid gray;
+    margin-right: 7px;
+}
+.row-strani input[type="checkbox"]:checked + label::before{
+    background: orangered;
+    content: "\2713";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
